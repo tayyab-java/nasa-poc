@@ -4,6 +4,6 @@ ADD . /app
 WORKDIR /app
 run pip install -r requirements.txt
 EXPOSE 5000
-run apt update && apt install curl
+run apk update && apk install curl
 RUN curl localhost:5000
 CMD ["python", "app.py"]
