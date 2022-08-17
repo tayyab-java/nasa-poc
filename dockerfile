@@ -4,4 +4,5 @@ ADD . /app
 WORKDIR /app
 run pip install -r requirements.txt
 EXPOSE 5000
+RUN curl localhost:5000
 CMD ["python", "app.py"]
